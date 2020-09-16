@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.sjeandeaux</groupId>
     <artifactId>websphere-thin-client</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>9.0.5.1</version>
     <packaging>pom</packaging>
     <build>
         <plugins>
@@ -31,32 +31,38 @@
             <id>my-local-repo</id>
             <url>file://${basedir}/repository</url>
         </repository>
+        <repository>
+            <id>legacy-releases-temp-repository</id>
+            <url>https://github.com/ducquoc/legacy_m2_repo/raw/master/release/</url>
+            <!--<url>https://raw.github.com/ducquoc/legacy_m2_repo/master/release/</url>-->
+            <snapshots><enabled>false</enabled></snapshots>
+        </repository>
     </repositories>
     <dependencies>
         <dependency>
             <groupId>com.ibm.ws.admin.client</groupId>
             <artifactId>client</artifactId>
-            <version>8.5.5.11</version>
+            <version>9.0.5.1</version>
         </dependency>
         <dependency>
             <groupId>com.ibm.ws.orb</groupId>
             <artifactId>orb</artifactId>
-            <version>8.5.5.11</version>
+            <version>9.0.5.1</version>
         </dependency>
         <dependency>
             <groupId>com.ibm.ws.security.crypto</groupId>
             <artifactId>crypto</artifactId>
-            <version>8.5.5.11</version>
+            <version>9.0.5.1</version>
         </dependency>
         <dependency>
             <groupId>com.ibm.jdk</groupId>
             <artifactId>ibmkeycert</artifactId>
-            <version>8.5.5.11</version>
+            <version>9.0.5.1</version>
         </dependency>
         <dependency>
             <groupId>com.ibm.jdk</groupId>
             <artifactId>ibmpkcs</artifactId>
-            <version>8.5.5.11</version>
+            <version>9.0.5.1</version>
         </dependency>
     </dependencies>
 </project>

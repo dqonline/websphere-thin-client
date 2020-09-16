@@ -3,3 +3,24 @@
 lib/
 repository/
 .project
+
+# IntelliJ specific files/directories
+out
+.idea/
+*.ipr
+*.iws
+*.iml
+atlassian-ide-plugin.xml
+/out/
+
+# Output
+/target/
+/build/
+
+# JAR or zip (negate by ! if needed)
+*.jar
+
+# OS specific files
+.DS_Store*
+*humbs.db
+
